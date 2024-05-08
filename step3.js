@@ -14,7 +14,7 @@ async function webcat(url) {
         out = resp.data
     }
     catch {
-        out = `request failed with status code ${err.response.status}`
+        out = `request failed with status code ${resp.status}`
     }
     return out
 }
